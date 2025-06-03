@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="functions.js"></script>
+    <title>S-cloud</title>
+</head>
+
+<body>
+
+    <div class="topnav" id="myTopnav">
+        <p class="logo">Opticalc</p>
+        <div>
+            <a href="index.html" class="index">Home</a>
+            <a href="about.html" class="about">About </a>
+            <a href="javascript:void(0);" style="font-size:15px;" class="dropDownIcon"
+                onclick="myFunction()">&#9776;</a>
+        </div>
+    </div>
+
+
+    <div class="cloud-content">
+
+        <h1>bientôt disponible S-Cloud. </h1>
+        <h2>Il s'agit d'Opticalc en ligne, mais avec plus de services.</h2>
+        <h3>Nous finalisons l'application et avons hâte de la partager avec vous. Restez connectés pour les mises à jour
+            du lancement et soyez parmi les premiers à découvrir la liberté d'accéder à vos données où que vous soyez,
+            sur n'importe quel appareil,
+            et de synchroniser vos données avec vos clients et fournisseurs. </h3>
+        <!-- <div>
+            <h3>Access Your Data Anytime, Anywhere</h3>
+            <p>
+                We’re excited to introduce a powerful new online app that gives you the freedom to store and retrieve
+                your
+                data
+                from anywhere in the world. Whether you're working from home, traveling, or switching between devices,
+                your
+                information will always be just a few clicks away. </p>
+        </div>
+        <div>
+
+            <h3> Seamless Sync Across All Your Devices. </h3>
+            <p> Our platform is designed to work effortlessly across smartphones, tablets, laptops, and desktops. You’ll
+                be
+                able
+                to log in securely and access your files no matter what device you’re using. No more email attachments
+                or
+                USB
+                drives—your data stays in sync and at your fingertips. </p>
+        </div>
+        <div>
+            <h3> Stay Connected with Your Clients and Suppliers </h3>
+            <p>
+                With built-in notification features, you can send and receive updates from your clients—if they also
+                have
+                the
+                app installed. Plus, you can even sync your work with your suppliers, making it easier to collaborate,
+                share
+                files, and stay aligned on deadlines and deliveries. </p>
+        </div>
+        <div>
+            <h3> Your Data, Safely Stored in the Cloud </h3>
+            <p>
+                Security is at the core of everything we do. Your files will be stored in encrypted cloud storage,
+                ensuring
+                your
+                data remains safe, private, and protected from unauthorized access. </p>
+        </div>
+        <div>
+            <h3>Coming Soon </h3>
+            <p>
+                We’re putting the final touches on the app and can’t wait to share it with you. Stay tuned for launch
+                updates
+                and be among the first to experience the freedom of accessing your data from anywhere, on any device.
+            </p>
+        </div> -->
+    </div>
+    <script>
+        document.addEventListener('click', function (event) {
+            var topnav = document.getElementById('myTopnav');
+            if (!topnav.contains(event.target) && topnav.classList.contains('responsive')) {
+                topnav.classList.remove('responsive');
+            }
+        });
+    </script>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Opticalc. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

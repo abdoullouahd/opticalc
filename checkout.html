@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="functions.js"></script>
+</head>
+
+<body>
+
+    <div class="topnav" id="myTopnav">
+        <p class="logo">Opticalc</p>
+        <div>
+
+            <a href="index.html" class="home">Home</a>
+            <a href="cloud.html" class="cloud">S-Cloud</a>
+            <a href="about.html" class="about">About </a>
+            <a href="javascript:void(0);" style="font-size:15px;" class="dropDownIcon"
+                onclick="myFunction()">&#9776;</a>
+        </div>
+
+
+    </div>
+    <div class="checkout-content">
+        <h1> Nous sommes profondément désolés.</h1>
+        <h2>
+            Notre système de paiement n'est pas encore mis en place. Nous travaillons actuellement dessus et nous nous
+            excusons pour la gêne occasionnée.
+
+            Nous travaillons actuellement sur le système de paiement pour le rendre disponible dès que possible.
+
+            Veuillez réessayer ultérieurement ou nous contacter à l'adresse <a href="mailto:abdoullouahd@gmail.com">abdoullouahd@gmail.com</a> pour des arrangements
+            alternatifs.
+
+            Merci de votre compréhension.</h2>
+
+    </div>
+    <script>
+        document.addEventListener('click', function (event) {
+            var topnav = document.getElementById('myTopnav');
+            if (!topnav.contains(event.target) && topnav.classList.contains('responsive')) {
+                topnav.classList.remove('responsive');
+            }
+        });
+    </script>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Opticalc. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

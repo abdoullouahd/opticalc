@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="About the creator of Opticalc App - Abdou's journey in developing optician management software">
+    <title>About - Opticalc App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="functions.js"></script>
+    <style>
+        .about-hero {
+            padding: 8rem 0 2rem;
+            text-align: center;
+            /* background: linear-gradient(135deg, #4f46e5 0%, #4338ca 100%); */
+            color: black;
+            border-radius: 20px;
+            font-size: 20px;
+            
+        }
+
+        .about-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+
+        }
+
+        .section-createur {
+            background: white;
+            border-radius: 1rem;
+            padding: 2rem;
+            margin: 2rem 0;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .creator-avatar {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background: #f3f4f6;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+            font-size: 4rem;
+            color: #4f46e5;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .social-links a {
+            color: #4f46e5;
+            font-size: 1.5rem;
+            transition: transform 0.2s;
+        }
+
+        .social-links a:hover {
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 768px) {
+            .about-content {
+                padding: 1rem;
+            }
+
+            .section-createur {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body> <!-- Navigation -->
+    <div class="topnav" id="myTopnav">
+        <p class="logo">Opticalc</p>
+        <div>
+            <a href="cloud.html" class="scould">S-cloud</a>
+            <a href="index.html" class="about">Home </a>
+            <a href="javascript:void(0);" style="font-size:15px;" class="dropDownIcon"
+                onclick="myFunction()">&#9776;</a>
+        </div>
+    </div>
+
+
+
+    <script>
+        // Mobile menu toggle functionality
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenuOverlay = document.getElementById('mobileMenuOverlay');
+        const mobileMenuDrawer = document.getElementById('mobileMenuDrawer');
+        const mobileMenuLinks = mobileMenuDrawer.querySelectorAll('a');
+
+        function toggleMobileMenu() {
+            mobileMenuBtn.classList.toggle('active');
+            mobileMenuOverlay.classList.toggle('active');
+            mobileMenuDrawer.classList.toggle('active');
+            document.body.style.overflow = mobileMenuDrawer.classList.contains('active') ? 'hidden' : '';
+        }
+
+        // Toggle menu on button click
+        mobileMenuBtn.addEventListener('click', toggleMobileMenu);
+
+        // Close menu when clicking on overlay
+        mobileMenuOverlay.addEventListener('click', toggleMobileMenu);
+
+        // Close menu when clicking on a link
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', toggleMobileMenu);
+        });
+
+        // Close menu when pressing Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && mobileMenuDrawer.classList.contains('active')) {
+                toggleMobileMenu();
+            }
+        });
+    </script>
+
+    <main>
+        <section class="about-hero">
+            <div class="container">
+                <h1>à propos de l'application et du créateur</h1>
+
+            </div>
+        </section>
+
+        <section class="about-content">
+            <div class="section-createur">
+                <div class="creator-avatar">
+                    <i class="fas fa-user-tie"></i>
+                </div>
+                <h2>Abdou Lkout</h2>
+                <p class="title">Developer/Designer</p>
+                <p>Bonjour ! Je suis Abdou, créateur de l'application Opticalc. Développeur passionné et visionnaire,
+                    j'ai créé Opticalc pour offrir aux opticiens des outils performants et faciles à utiliser afin de
+                    gérer plus efficacement leur cabinet.</p>
+                <p>Mon parcours dans le développement de logiciels et ma compréhension des défis uniques de l'industrie
+                    optique m'ont conduit à développer cette solution complète qui simplifie les opérations quotidiennes
+                    des professionnels de la vue.</p>
+
+                <div class="social-links">
+                    <a href="mailto:abdoullouahd@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+
+            <div class="mission-section">
+                <h2>Notre Mission</h2>
+                <p>Chez Opticalc, nous nous engageons à développer des logiciels qui font une réelle différence dans
+                    l'industrie optique. Notre objectif est d'aider les opticiens à gagner du temps, à réduire les
+                    erreurs et à offrir un meilleur service à leurs clients grâce à une technologie intuitive et fiable.
+                </p>
+
+                <h3>Pourquoi choisir Opticalc ?</h3>
+                <ul>
+                    <li>Développé par une personne qui comprend les besoins du secteur optique</li>
+                    <li>Interface conviviale conçue pour les professionnels occupés</li>
+                    <li>Mises à jour et améliorations régulières basées sur les retours utilisateurs</li>
+                    <li>Support dédié directement par le créateur</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <script>
+        document.addEventListener('click', function (event) {
+            var topnav = document.getElementById('myTopnav');
+            if (!topnav.contains(event.target) && topnav.classList.contains('responsive')) {
+                topnav.classList.remove('responsive');
+            }
+        });
+    </script>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Opticalc. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

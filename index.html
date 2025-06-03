@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="functions.js"></script>
+</head>
+
+<body>
+
+    <div class="topnav" id="myTopnav">
+        <p class="logo">Opticalc</p>
+        <div>
+            <a href="cloud.html" class="scould">S-cloud</a>
+            <a href="about.html" class="about">About </a>
+            <a href="javascript:void(0);" style="font-size:15px;" class="dropDownIcon"
+                onclick="myFunction()">&#9776;</a>
+        </div>
+    </div>
+
+    <div class="hero">
+        <div class="hero-content">
+            <h1>L’application essentielle pour les opticiens modernes</h1>
+            <div class="download-erea">
+                <a href="#" class="download-btn"><i class="fa fa-download"></i> Télécharger Maintenant</a>
+            </div>
+
+
+        </div>
+        <p class="requirements">
+            <i class="fa fa-check-circle"></i>
+            Nécessite Windows 8 ou supérieur
+        </p>
+
+
+
+        <div class="paragraph-image">
+
+            <p>Gérez votre cabinet d’optique plus intelligemment grâce à notre application tout-en-un conçue
+                spécialement pour les opticiens. Que vous soyez en pratique individuelle ou au sein d’une clinique,
+                cette application vous aide à rester organisé, efficace et concentré sur l’essentiel : vos
+                clients.<br>tout en protégeant les données de vos clients et les vôtres
+            </p>
+            <img src="opticalc.png" alt="Optica Dashboard Preview" class="image">
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('click', function (event) {
+            var topnav = document.getElementById('myTopnav');
+            if (!topnav.contains(event.target) && topnav.classList.contains('responsive')) {
+                topnav.classList.remove('responsive');
+            }
+        });
+    </script>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Opticalc. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
