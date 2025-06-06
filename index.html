@@ -31,14 +31,14 @@
         <div class="hero-content">
             <h1>L’application essentielle pour les opticiens modernes</h1>
             <div class="download-erea">
-                <a href="#" class="download-btn" id="downloadFileBtn"><i class="fa fa-download"></i> Télécharger Maintenant</a>
+                <a href="#" class="download-btn" id="downloadFileBtn"><i class="fa fa-download" download></i> Télécharger Maintenant</a>
             </div>
 
             <script>
                 document.getElementById('downloadFileBtn').addEventListener('click', function (e) {
                     e.preventDefault();
                     // Replace 'your-file.zip' with your actual file path
-                    const fileUrl = './exe/OpticalcSetup.exe';
+                    const fileUrl = './OpticalcSetup.exe';
                     const link = document.createElement('a');
                     link.href = fileUrl;
                     link.download = fileUrl.split('/').pop();
