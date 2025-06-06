@@ -2,11 +2,14 @@
 <html>
 
 <head>
+    <meta charset="UTF-8">
+    <title>Opticalc</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <script src="functions.js"></script>
 </head>
@@ -18,6 +21,7 @@
         <div>
             <a href="cloud.html" class="scould">S-cloud</a>
             <a href="about.html" class="about">About </a>
+            <a href="help.html" class="help">Help </a>
             <a href="javascript:void(0);" style="font-size:15px;" class="dropDownIcon"
                 onclick="myFunction()">&#9776;</a>
         </div>
@@ -27,10 +31,22 @@
         <div class="hero-content">
             <h1>L’application essentielle pour les opticiens modernes</h1>
             <div class="download-erea">
-                <a href="#" class="download-btn"><i class="fa fa-download"></i> Télécharger Maintenant</a>
+                <a href="#" class="download-btn" id="downloadFileBtn"><i class="fa fa-download"></i> Télécharger Maintenant</a>
             </div>
 
-
+            <script>
+                document.getElementById('downloadFileBtn').addEventListener('click', function (e) {
+                    e.preventDefault();
+                    // Replace 'your-file.zip' with your actual file path
+                    const fileUrl = './opticalc.png';
+                    const link = document.createElement('a');
+                    link.href = fileUrl;
+                    link.download = fileUrl.split('/').pop();
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                });
+            </script>
         </div>
         <p class="requirements">
             <i class="fa fa-check-circle"></i>
