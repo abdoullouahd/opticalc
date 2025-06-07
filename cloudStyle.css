@@ -1,0 +1,24 @@
+:root {
+  --crimy: rgba(255, 235, 255, 0.3);
+  --primary: #f1f1f1;
+  --primary-dark: (#4338ca);
+  --secondary: #10b981;
+  --dark: #1f2937;
+  --light: #f9fafb;
+  --gray: #6b7280;
+  --light-gray: #f3f4f6;
+  --white: #ffffff;
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --transition: all 0.2s ease-in-out;
+}
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  background-size: 20px 20px;
+  background-position: 0 0, 10px 10px, 10px 10px, 0 0;
+  background-color: var(--primary);
+  color: rgb(255, 255, 255);
+  -webkit-font-smoothing: antialiased;
+
+}

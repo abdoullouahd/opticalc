@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
-
     <meta charset="UTF-8">
-    <title>Opticalc-help</title>
+    <title>Aide - Opticalc</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,22 +11,93 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="help-style.css">
     <script src="functions.js"></script>
-
 </head>
 
 <body>
-
     <div class="topnav" id="myTopnav">
         <p class="logo">Opticalc</p>
         <div>
-            <a href="index.html" class="about">Home </a>
-            <a href="cloud.html" class="scould">S-cloud</a>
-            <a href="about.html" class="about">About </a>
-            <a href="javascript:void(0);" style="font-size:15px;" class="dropDownIcon"
-                onclick="myFunction()">&#9776;</a>
+            <a href="index.html">Accueil</a>
+            <a href="cloud.html">S-cloud</a>
+            <a href="about.html">À propos</a>
+            <a href="javascript:void(0);" style="font-size:15px;" class="dropDownIcon" onclick="myFunction()">&#9776;</a>
         </div>
     </div>
+
+    <div class="container">
+        <h1><i class="fa fa-question-circle"></i> Centre d'aide Opticalc</h1>
+        
+        <div class="help-section">
+            <h2><i class="fa fa-download"></i> Installation</h2>
+            <ol>
+                <li>Téléchargez le fichier d'installation depuis la page d'accueil</li>
+                <li>Exécutez le fichier <code>OpticalcSetup.exe</code></li>
+                <li>Suivez les instructions à l'écran pour terminer l'installation</li>
+                <li>Lancez Opticalc depuis le menu Démarrer ou le raccourci sur le bureau</li>
+            </ol>
+        </div>
+
+        <div class="help-section">
+            <h2><i class="fa fa-calculator"></i> Utilisation de base</h2>
+            <ul class="feature-list">
+                <li><i class="fa fa-plus-circle"></i> Appuyez sur le bouton <strong>Ajouter</strong> pour ajouter un nouveau client</li>
+                <li><i class="fa fa-user"></i> Cliquez sur le nom d'un client pour afficher son résumé</li>
+                <li><i class="fa fa-mouse-pointer"></i> Double-cliquez sur un client pour afficher les détails complets</li>
+                <li><i class="fa fa-calendar-plus-o"></i> Dans la page des détails, cliquez sur <strong>Ajouter une visite</strong> pour enregistrer une nouvelle visite</li>
+                <li><i class="fa fa-print"></i> Pour imprimer une visite, cliquez sur l'icône d'impression <i class="fa fa-print"></i> à côté de la visite concernée</li>
+            </ul>
+        </div>
+
+        <div class="help-section">
+            <h2><i class="fa fa-cloud"></i> Synchronisation S-Cloud</h2>
+            <p>Opticalc offre une synchronisation cloud pour sauvegarder et accéder à vos données depuis n'importe où :</p>
+            <ol>
+                <li>Connectez-vous à votre compte S-Cloud</li>
+                <li>Activez la synchronisation automatique dans les paramètres</li>
+                <li>Vos données seront disponibles sur tous vos appareils</li>
+            </ol>
+        </div>
+
+        <div class="help-section">
+            <h2><i class="fa fa-exclamation-triangle"></i> Dépannage</h2>
+            <div class="troubleshooting">
+                <h3>L'application ne démarre pas</h3>
+                <p>Si l'application ne démarre pas, essayez ces solutions :</p>
+                <ul class="troubleshooting-steps">
+                    <li><i class="fa fa-windows"></i> Vérifiez que <strong>Visual C++ Redistributable x64</strong> est installé sur votre système</li>
+                    <li><i class="fa fa-folder-open"></i> Allez dans le dossier d'installation de l'application et vérifiez que <strong>sqlite.dll</strong> est présent</li>
+                    <li><i class="fa fa-shield"></i> Vérifiez que votre antivirus ne bloque pas l'application (ajoutez une exception si nécessaire)</li>
+                    <li><i class="fa fa-cog"></i> Vérifiez que votre système répond aux exigences minimales :
+                        <ul>
+                            <li>Windows 8 ou version ultérieure</li>
+                            <li>1 Go de RAM minimum</li>
+                            <li>100 Mo d'espace disque disponible</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h3>Problèmes de connexion S-Cloud</h3>
+                <ul>
+                    <li>Vérifiez votre connexion Internet</li>
+                    <li>Assurez-vous que vos identifiants sont corrects</li>
+                    <li>Vérifiez que le service S-Cloud est opérationnel</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="help-section">
+            <h2><i class="fa fa-envelope"></i> Support technique</h2>
+            <p>Pour toute question ou problème non résolu, n'hésitez pas à nous contacter :</p>
+            <p>Email : <a href="mailto:support@opticalc.com">abdoullouahd@gmail.com</a></p>
+            
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Opticalc. Tous droits réservés.</p>
+    </footer>
 </body>
 
 </html>
