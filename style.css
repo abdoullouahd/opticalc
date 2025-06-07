@@ -14,7 +14,10 @@
   --transition: all 0.2s ease-in-out;
 }
 
-html,
+html {
+  height: 100%;
+}
+
 body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
   background-size: 20px 20px;
@@ -22,7 +25,17 @@ body {
   background-color: var(--primary);
   color: rgb(255, 255, 255);
   -webkit-font-smoothing: antialiased;
-  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main content wrapper - this will push the footer down */
+.main-content {
+  flex: 1 0 auto;
+  width: 100%;
 }
 
 .topnav {
@@ -269,25 +282,158 @@ body {
 /*/*============================================================ Footer implementation*/
 
 footer {
-  position: sticky;
-  height: 50px;
-  top: calc(100vh - 100px);
+  background-color: var(--dark);
+  color: var(--light);
+  text-align: center;
+  padding: 2rem 0;
+  margin-top: auto; /* This pushes the footer to the bottom */
+  width: 100%;
+  flex-shrink: 0; /* Prevents the footer from shrinking */
 }
 
-
 .footer-content {
-
-  background-color: rgba(255, 190, 255, 0.3);
-  align-content: center;
-  text-align: center;
-  font-size: 20px;
-  color: var(--dark);
-
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
 .footer-content p {
-  font-style: italic;
-  font-size: 16px;
+  margin: 0;
+  color: var(--light);
+  font-size: 0.9rem;
+}
+
+/* S-Cloud Features */
+.cloud-content {
+    max-width: 1200px;
+    margin: 6rem auto 2rem;
+    padding: 0 1rem;
+    text-align: center;
+}
+
+.cloud-content h1 {
+    font-size: 3rem;
+    color: #1a1a2e;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.cloud-content h2 {
+    font-size: 1.5rem;
+    color: #4a4a68;
+    margin: 0 auto 3rem;
+    font-weight: 400;
+    line-height: 1.6;
+    max-width: 800px;
+    padding: 0 1rem;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.feature-card {
+    background: white;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.feature-icon {
+    font-size: 2.5rem;
+    color: #4f46e5;
+    margin-bottom: 1.5rem;
+}
+
+.feature-card h3 {
+    color: #1a1a2e;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: -0.3px;
+}
+
+.feature-card p {
+    color: #4a4a68;
+    line-height: 1.7;
+    margin: 0;
+    font-size: 1.05rem;
+}
+
+.coming-soon {
+    text-align: center;
+    margin: 4rem auto 0;
+    padding: 3rem 2rem;
+    background: #f9fafb;
+    border-radius: 10px;
+    max-width: 800px;
+}
+
+.coming-soon h3 {
+    color: #1f2937;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.coming-soon p {
+    color: #6b7280;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.notify-btn {
+    display: inline-block;
+    background: #4f46e5;
+    color: white;
+    padding: 0.75rem 2rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s, transform 0.2s;
+    font-size: 1rem;
+}
+
+.notify-btn:hover {
+    background: #4338ca;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .features-grid {
+        grid-template-columns: 1fr;
+        padding: 0 1rem;
+    }
+    
+    .cloud-content h1 {
+        font-size: 2rem;
+    }
+    
+    .cloud-content h2 {
+        font-size: 1.25rem;
+    }
+    
+    .feature-card {
+        padding: 1.5rem;
+    }
+    
+    .coming-soon {
+        padding: 2rem 1rem;
+    }
 }
 
 /*============================================================ End of Footer  implementation*/

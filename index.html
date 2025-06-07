@@ -27,63 +27,65 @@
         </div>
     </div>
 
-    <div class="hero">
-        <div class="hero-content">
-            <h1>L’application essentielle pour les opticiens modernes</h1>
-            <div class="download-erea">
-                <a href="https://github.com/abdoullouahd/opticalc/releases/download/v2.0.0-beta/OpticalSetup.exe"
-                    class="download-btn" id="downloadFileBtn"><i class="fa fa-download" target="_blank"
-                        rel="noopener noreferrer"></i>
-                    Télécharger Maintenant</a>
-            </div>
-            <p class="requirements">
-                <i class="fa fa-check-circle"></i>
-                Nécessite Windows 8 ou supérieur
-            </p>
-            <!--   warning from browser  -->
-            <div
-                style="background: #f0f4ff; border-left: 5px solid #1a73e8; padding: 1rem; margin-top: 2rem; border-radius: 4px;">
-                <strong>Important :</strong> Ce fichier peut être signalé par votre navigateur ou Windows, car il est
-                nouveau et non signé.<br><br>
-                Opticalc est une application sûre. Si vous voyez un avertissement comme <em>"Ce fichier n'est pas
-                    souvent téléchargé"</em> ou <em>"Windows a protégé votre PC"</em>, voici quoi faire :
-                <ul style="margin-top: 0.5rem;">
-                    <li><strong>Sur Google Chrome :</strong> Cliquez sur la flèche à côté de l'avertissement, puis
-                        choisissez <em>« Conserver »</em> ou <em>« Conserver quand même »</em>.</li>
-                    <li><strong>Sur Microsoft Edge :</strong> Cliquez sur <em>« Conserver »</em> → <em>« Afficher
-                            plus »</em> → <em>« Conserver quand même »</em>.</li>
-                    <li><strong>Sur Windows (SmartScreen) :</strong> Cliquez sur <em>« Informations
-                            complémentaires »</em> puis <strong>« Exécuter quand même »</strong>.</li>
-                </ul>
-                <p style="margin-top: 0.5rem;">Nous travaillons à signer numériquement l'application pour éviter ces
-                    avertissements à l'avenir.</p>
+    <div class="main-content">
+        <div class="hero">
+            <div class="hero-content">
+                <h1>L’application essentielle pour les opticiens modernes</h1>
+                <div class="download-erea">
+                    <a href="https://github.com/abdoullouahd/opticalc/releases/download/v2.0.0-beta/OpticalSetup.exe"
+                        class="download-btn" id="downloadFileBtn"><i class="fa fa-download" target="_blank"
+                            rel="noopener noreferrer"></i>
+                        Télécharger Maintenant</a>
+                </div>
+                <p class="requirements">
+                    <i class="fa fa-check-circle"></i>
+                    Nécessite Windows 8 ou supérieur
+                </p>
+                <!--   warning from browser  -->
+                <div
+                    style="background: #f0f4ff; border-left: 5px solid #1a73e8; padding: 1rem; margin-top: 2rem; border-radius: 4px;">
+                    <strong>Important :</strong> Ce fichier peut être signalé par votre navigateur ou Windows, car il est
+                    nouveau et non signé.<br><br>
+                    Opticalc est une application sûre. Si vous voyez un avertissement comme <em>"Ce fichier n'est pas
+                        souvent téléchargé"</em> ou <em>"Windows a protégé votre PC"</em>, voici quoi faire :
+                    <ul style="margin-top: 0.5rem;">
+                        <li><strong>Sur Google Chrome :</strong> Cliquez sur la flèche à côté de l'avertissement, puis
+                            choisissez <em>« Conserver »</em> ou <em>« Conserver quand même »</em>.</li>
+                        <li><strong>Sur Microsoft Edge :</strong> Cliquez sur <em>« Conserver »</em> → <em>« Afficher
+                                plus »</em> → <em>« Conserver quand même »</em>.</li>
+                        <li><strong>Sur Windows (SmartScreen) :</strong> Cliquez sur <em>« Informations
+                                complémentaires »</em> puis <strong>« Exécuter quand même »</strong>.</li>
+                    </ul>
+                    <p style="margin-top: 0.5rem;">Nous travaillons à signer numériquement l'application pour éviter ces
+                        avertissements à l'avenir.</p>
+                </div>
+
+
             </div>
 
 
+
+
+            <div class="paragraph-image">
+
+                <p>Gérez votre cabinet d’optique plus intelligemment grâce à notre application tout-en-un conçue
+                    spécialement pour les opticiens. Que vous soyez en pratique individuelle ou au sein d’une clinique,
+                    cette application vous aide à rester organisé, efficace et concentré sur l’essentiel : vos
+                    clients.<br>tout en protégeant les données de vos clients et les vôtres
+                </p>
+                <img src="opticalc.png" alt="Optica Dashboard Preview" class="image">
+            </div>
         </div>
 
-
-
-
-        <div class="paragraph-image">
-
-            <p>Gérez votre cabinet d’optique plus intelligemment grâce à notre application tout-en-un conçue
-                spécialement pour les opticiens. Que vous soyez en pratique individuelle ou au sein d’une clinique,
-                cette application vous aide à rester organisé, efficace et concentré sur l’essentiel : vos
-                clients.<br>tout en protégeant les données de vos clients et les vôtres
-            </p>
-            <img src="opticalc.png" alt="Optica Dashboard Preview" class="image">
-        </div>
-    </div>
-
-    <script>
-        document.addEventListener('click', function (event) {
-            var topnav = document.getElementById('myTopnav');
-            if (!topnav.contains(event.target) && topnav.classList.contains('responsive')) {
-                topnav.classList.remove('responsive');
-            }
-        });
-    </script>
+        <script>
+            document.addEventListener('click', function (event) {
+                var topnav = document.getElementById('myTopnav');
+                if (!topnav.contains(event.target) && topnav.classList.contains('responsive')) {
+                    topnav.classList.remove('responsive');
+                }
+            });
+        </script>
+    </div> <!-- Close main-content -->
 
     <footer>
         <div class="footer-content">
