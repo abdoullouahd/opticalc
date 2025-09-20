@@ -1,0 +1,209 @@
+/* Help Page Specific Styles */
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 100px auto 40px;
+    padding: 0 20px;
+    color: #333;
+}
+
+/* Headers */
+h1 {
+    color: var(--dark);
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+h2 {
+    color: var(--primary-dark);
+    font-size: 1.8rem;
+    margin: 2.5rem 0 1.2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--light-gray);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+h3 {
+    color: var(--dark);
+    font-size: 1.4rem;
+    margin: 1.8rem 0 1rem;
+}
+
+/* Help Sections */
+.help-section {
+    background: var(--white);
+    border-radius: 8px;
+    box-shadow: var(--shadow-sm);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    transition: var(--transition);
+}
+
+.help-section:hover {
+    box-shadow: var(--shadow);
+}
+
+/* Lists */
+.help-section ol,
+.help-section ul {
+    margin: 1rem 0 1rem 2rem;
+    line-height: 1.7;
+}
+
+.help-section li {
+    margin-bottom: 0.5rem;
+}
+
+/* Code blocks */
+code {
+    background: var(--light-gray);
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9em;
+    color: #e53e3e;
+}
+
+/* Links */
+a {
+    color: var(--primary-dark);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+a:hover {
+    color: var(--secondary);
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 3rem;
+    border-top: 1px solid var(--light-gray);
+    color: var(--gray);
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        margin-top: 80px;
+        padding: 0 15px;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    .help-section {
+        padding: 1.5rem;
+    }
+}
+
+/* Icons */
+.fa {
+    color: var(--primary-dark);
+    width: 24px;
+    text-align: center;
+}
+
+/* Feature List */
+.feature-list {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0;
+}
+
+.feature-list li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--light-gray);
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    transition: var(--transition);
+}
+
+.feature-list li:last-child {
+    border-bottom: none;
+}
+
+.feature-list li:hover {
+    transform: translateX(5px);
+}
+
+.feature-list .fa {
+    margin-top: 3px;
+    flex-shrink: 0;
+}
+
+.feature-list strong {
+    color: var(--primary-dark);
+    font-weight: 600;
+}
+
+/* Troubleshooting section */
+.troubleshooting {
+    background: #fff8f8;
+    border-left: 4px solid #feb2b2;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 0 4px 4px 0;
+}
+
+.troubleshooting h3 {
+    color: #c53030;
+    margin-top: 0;
+}
+
+.troubleshooting-steps {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0 0;
+}
+
+.troubleshooting-steps > li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #ffebeb;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.troubleshooting-steps > li:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.troubleshooting-steps .fa {
+    color: #c53030;
+    margin-top: 3px;
+    flex-shrink: 0;
+}
+
+.troubleshooting-steps ul {
+    margin: 0.5rem 0 0 2rem;
+    padding: 0;
+    list-style-type: disc;
+}
+
+.troubleshooting-steps ul li {
+    padding: 0.25rem 0;
+    border: none;
+    margin: 0;
+}
+
+/* Additional spacing for better readability */
+p {
+    line-height: 1.7;
+    margin-bottom: 1.2rem;
+}

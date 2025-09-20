@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Aide - optilk</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="help-style.css">
+    <script src="functions.js"></script>
+</head>
+
+<body>
+    <div class="main-content">
+    <div class="topnav" id="myTopnav">
+        <p class="logo">optilk</p>
+        <div>
+            <a href="index.html">Accueil</a>
+            <a href="cloud.html">web-optilk</a>
+            <a href="about.html">À propos</a>
+            <a href="javascript:void(0);" style="font-size:15px;" class="dropDownIcon" onclick="myFunction()">&#9776;</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1><i class="fa fa-question-circle"></i> Centre d'aide optilk</h1>
+        
+        <div class="help-section">
+            <h2><i class="fa fa-download"></i> Installation</h2>
+            <ol>
+                <li>Téléchargez le fichier d'installation depuis la page d'accueil</li>
+                <li>Exécutez le fichier <code>OptilkSetup.exe</code></li>
+                <li>Suivez les instructions à l'écran pour terminer l'installation</li>
+                <li>Lancez optilk depuis le menu Démarrer ou le raccourci sur le bureau</li>
+            </ol>
+        </div>
+
+        <div class="help-section">
+            <h2><i class="fa fa-calculator"></i> Utilisation de base</h2>
+            <ul class="feature-list">
+                <li><i class="fa fa-plus-circle"></i> Appuyez sur le bouton <strong>Ajouter</strong> pour ajouter un nouveau client</li>
+                <li><i class="fa fa-user"></i> Cliquez sur le nom d'un client pour afficher son résumé</li>
+                <li><i class="fa fa-mouse-pointer"></i> Double-cliquez sur un client pour afficher les détails complets</li>
+                <li><i class="fa fa-calendar-plus-o"></i> Dans la page des détails, cliquez sur <strong>Ajouter une visite</strong> pour enregistrer une nouvelle visite</li>
+                <li><i class="fa fa-print"></i> Pour imprimer une visite, cliquez sur l'icône d'impression <i class="fa fa-print"></i> à côté de la visite concernée</li>
+            </ul>
+        </div>
+
+        <div class="help-section">
+            <h2><i class="fa fa-cloud"></i> Transition vers PWA</h2>
+            <p>Nous retirons progressivement l'application de bureau et la remplaçons par une Progressive Web App (PWA) plus moderne et accessible.</p>
+            <p>La PWA vous permet d'accéder à vos données en toute sécurité, de bénéficier de mises à jour automatiques et d'une installation simple depuis votre navigateur.</p>
+            <h3><i class="fa fa-rocket"></i> Comment utiliser la nouvelle PWA</h3>
+            <ol>
+                <li>Ouvrez optilk depuis votre navigateur (Chrome, Edge, Safari, etc.).</li>
+                <li>Installez la PWA via le menu du navigateur ("Installer l'application" ou "Ajouter à l'écran d'accueil").</li>
+                <li>Connectez-vous à votre compte pour retrouver vos données et fonctionnalités.</li>
+            </ol>
+            <p>Vos données restent synchronisées et sécurisées durant toute la transition.</p>
+        </div>
+
+        <div class="help-section">
+            <h2><i class="fa fa-exclamation-triangle"></i> Dépannage</h2>
+            <div class="troubleshooting">
+                <h3>L'application ne démarre pas</h3>
+                <p>Si l'application ne démarre pas, essayez ces solutions :</p>
+                <ul class="troubleshooting-steps">
+                    <li><i class="fa fa-windows"></i> Vérifiez que <strong>Visual C++ Redistributable x64</strong> est installé sur votre système</li>
+                    <li><i class="fa fa-folder-open"></i> Allez dans le dossier d'installation de l'application et vérifiez que <strong>sqlite.dll</strong> est présent</li>
+                    <li><i class="fa fa-shield"></i> Vérifiez que votre antivirus ne bloque pas l'application (ajoutez une exception si nécessaire)</li>
+                    <li><i class="fa fa-cog"></i> Vérifiez que votre système répond aux exigences minimales :
+                        <ul>
+                            <li>Windows 8 ou version ultérieure</li>
+                            <li>1 Go de RAM minimum</li>
+                            <li>100 Mo d'espace disque disponible</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h3>Questions sur la transition vers la PWA</h3>
+                <ul>
+                    <li>Vérifiez votre connexion Internet.</li>
+                    <li>Mettre à jour votre navigateur vers la dernière version.</li>
+                    <li>Si l'option d'installation n'apparaît pas, vidiez le cache ou essayez un autre navigateur (Chrome/Edge).</li>
+                    <li>Assurez-vous d'être connecté avec les bons identifiants.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="help-section">
+            <h2><i class="fa fa-envelope"></i> Support technique</h2>
+            <p>Pour toute question ou problème non résolu, n'hésitez pas à nous contacter :</p>
+            <p>Email : <a href="mailto:support@opticalc.com">abdoullouahd@gmail.com</a></p>
+            
+        </div>
+    </div>
+    </div> <!-- Close main-content -->
+    <footer>
+        <p>&copy; 2025 optilk. Tous droits réservés.</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="functions.js"></script>
+    <title>web-optilk</title>
+</head>
+
+<body>
+    <div class="main-content">
+        <div class="topnav" id="myTopnav">
+            <p class="logo">optilk</p>
+            <div>
+                <a href="index.html" class="index">Accueil</a>
+                <a href="about.html" class="about"> À propos </a>
+                <a href="help.html" class="help">Aide </a>
+                <a href="javascript:void(0);" style="font-size:15px;" class="dropDownIcon"
+                    onclick="myFunction()">&#9776;</a>
+            </div>
+        </div>
+
+       <div class="cloud-content">
+            <h1>Transition vers PWA</h1>
+            <h2>Nous évoluons pour mieux vous servir</h2>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fa fa-mobile"></i>
+                    </div>
+                    <h3>Adieu l'application de bureau</h3>
+                    <p>Nous annonçons le retrait progressif de notre application de bureau au profit d'une solution plus moderne et plus accessible : une Progressive Web App (PWA).</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fa fa-rocket"></i>
+                    </div>
+                    <h3>Les avantages de la PWA</h3>
+                    <p>Notre nouvelle PWA offre une expérience similaire à une application native, avec des mises à jour automatiques, un fonctionnement hors ligne, et une installation facile depuis votre navigateur.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fa fa-sync"></i>
+                    </div>
+                    <h3>Transition en douceur</h3>
+                    <p>Vos données resteront accessibles et sécurisées pendant cette transition. Toutes les fonctionnalités de l'ancienne application seront disponibles dans la nouvelle PWA.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fa fa-question-circle"></i>
+                    </div>
+                    <h3>Questions ?</h3>
+                    <p>Notre équipe est là pour vous accompagner dans cette transition. N'hésitez pas à nous contacter pour toute question ou assistance.</p>
+                </div>
+            </div>
+            
+            <div class="coming-soon">
+                <h3>Disponible bientôt</h3>
+                <p>La nouvelle version PWA sera disponible très prochainement. Restez à l'écoute pour plus d'informations !</p>
+            </div>
+            <!-- <div>
+                <h3>Access Your Data Anytime, Anywhere</h3>
+                <p>
+                    We’re excited to introduce a powerful new online app that gives you the freedom to store and retrieve
+                    your
+                    data
+                    from anywhere in the world. Whether you're working from home, traveling, or switching between devices,
+                    your
+                    information will always be just a few clicks away. </p>
+            </div>
+            <div>
+
+                <h3> Seamless Sync Across All Your Devices. </h3>
+                <p> Our platform is designed to work effortlessly across smartphones, tablets, laptops, and desktops. You’ll
+                    be
+                    able
+                    to log in securely and access your files no matter what device you’re using. No more email attachments
+                    or
+                    USB
+                    drives—your data stays in sync and at your fingertips. </p>
+            </div>
+            <div>
+                <h3> Stay Connected with Your Clients and Suppliers </h3>
+                <p>
+                    With built-in notification features, you can send and receive updates from your clients—if they also
+                    have
+                    the
+                    app installed. Plus, you can even sync your work with your suppliers, making it easier to collaborate,
+                    share
+                    files, and stay aligned on deadlines and deliveries. </p>
+            </div>
+            <div>
+                <h3> Your Data, Safely Stored in the Cloud </h3>
+                <p>
+                    Security is at the core of everything we do. Your files will be stored in encrypted cloud storage,
+                    ensuring
+                    your
+                    data remains safe, private, and protected from unauthorized access. </p>
+            </div>
+            <div>
+                <h3>Coming Soon </h3>
+                <p>
+                    We’re putting the final touches on the app and can’t wait to share it with you. Stay tuned for launch
+                    updates
+                    and be among the first to experience the freedom of accessing your data from anywhere, on any device.
+                </p>
+            </div> -->
+        </div>
+        <script>
+            document.addEventListener('click', function (event) {
+                var topnav = document.getElementById('myTopnav');
+                if (!topnav.contains(event.target) && topnav.classList.contains('responsive')) {
+                    topnav.classList.remove('responsive');
+                }
+            });
+        </script>
+    </div> <!-- Close main-content -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 optilk. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
