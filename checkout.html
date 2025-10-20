@@ -1,60 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>pricing</title>
+    <title>OptiLk - Avis Important</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #fff5f5;
+        }
+        .warning-container {
+            max-width: 800px;
+            background-color: #ffebee;
+            border: 4px solid #f44336;
+            color: #d32f2f;
+            padding: 40px;
+            margin: 20px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-top: 0;
+            color: #b71c1c;
+        }
+        p {
+            font-size: 1.5em;
+            line-height: 1.6;
+        }
+        .logo {
+            font-size: 2em;
+            font-weight: bold;
+            color: #d32f2f;
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="main-content">
-        <div class="topnav" id="myTopnav">
-            <p class="logo">optilk</p>
-            <div>
-
-                <a href="index.html" class="home">Accueil</a>
-                <a href="cloud.html" class="cloud">web-optilk</a>
-                <a href="about.html" class="about">À propos </a>
-                <a href="help.html" class="help">Aide </a>
-                <a href="javascript:void(0);" style="font-size:15px;" class="dropDownIcon"
-                    onclick="myFunction()">&#9776;</a>
-            </div>
-
-
+    <div class="warning-container">
+        <div class="logo">OptiLk</div>
+        <h1>⚠️ AVIS IMPORTANT</h1>
+        <p>
+            <strong>Important :</strong> Aucune nouvelle licence ne sera accordée car l'application sera bientôt arrêtée.
+            <br><br>
+            Les licences existantes resteront valables jusqu'à la date d'arrêt.
+            <br><br>
+            Nous nous excusons pour la gêne occasionnée.
+        </p>
+        <div style="margin-top: 30px; padding: 20px; background-color: #e8f5e9; border-radius: 8px; border-left: 4px solid #4caf50;">
+            <p style="color: #2e7d32; font-weight: 500; margin: 0;">
+                Découvrez notre nouvelle solution : <a href="cloud.html" style="color: #1b5e20; text-decoration: underline;">OptiLk PWA</a>
+            </p>
         </div>
-        <div class="checkout-content">
-            <h1> Nous sommes profondément désolés.</h1>
-            <h2>
-                Notre système de paiement n'est pas encore mis en place. Nous travaillons actuellement dessus et nous nous
-                excusons pour la gêne occasionnée.
-
-                Nous travaillons actuellement sur le système de paiement pour le rendre disponible dès que possible.
-
-                Veuillez réessayer ultérieurement ou nous contacter à l'adresse <a href="mailto:abdoullouahd@gmail.com">abdoullouahd@gmail.com</a> pour des arrangements
-                alternatifs.
-
-                Merci de votre compréhension.</h2>
-
-        </div>
-        <script>
-            document.addEventListener('click', function (event) {
-                var topnav = document.getElementById('myTopnav');
-                if (!topnav.contains(event.target) && topnav.classList.contains('responsive')) {
-                    topnav.classList.remove('responsive');
-                }
-            });
-        </script>
-    </div> <!-- Close main-content -->
-    <footer>
+    </div>
+    
+    <footer style="width: 100%; text-align: center; padding: 20px 0; margin-top: auto; background-color: #f8f9fa; border-top: 1px solid #e9ecef;">
         <div class="footer-content">
-            <p>&copy; 2025 optilk. All rights reserved.</p>
+            <p style="margin: 0; color: #6c757d; font-size: 0.9em;">&copy; 2025 optilk. Tous droits réservés.</p>
         </div>
     </footer>
 </body>
