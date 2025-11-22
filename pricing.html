@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing - optilk</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="functions.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <div class="topnav" id="myTopnav">
+        <p class="logo">optilk</p>
+        <div>
+            <a href="index.html" class="home">Accueil</a>
+            <a href="cloud.html" class="cloud">web-optilk</a>
+            <a href="pricing.html" class="pricing">Pricing</a>
+            <a href="about.html" class="about">À propos</a>
+            <a href="help.html" class="help">Aide</a>
+            <a href="javascript:void(0);" style="font-size:15px;" class="dropDownIcon" onclick="myFunction()">&#9776;</a>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <!-- Pricing Header -->
+        <section class="pricing-intro">
+            <div class="container">
+                <h1 style="color: var(--dark);">Tarification simple et transparente</h1>
+                <p style="color: var(--gray);">Choisissez le forfait qui vous convient. Sans frais cachés, annulation à tout moment.</p>
+            </div>
+        </section>
+
+        <!-- Pricing Plans -->
+        <section class="pricing-plans">
+            <div class="container">
+                <div class="plans-grid">
+                    <!-- Desktop License (Perpetual) -->
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h3>Application de bureau (licence)</h3>
+                            <div class="price">à partir de 399 dh<span> / paiement unique</span></div>
+                            <p>Licence perpétuelle. Données stockées sur votre PC.</p>
+                        </div>
+                        <div class="pricing-features">
+                            <ul>
+                                <li><i class="fa fa-check"></i> Paiement unique, licence à vie</li>
+                                <li><i class="fa fa-check"></i> Données locales sur votre ordinateur</li>
+                                <li><i class="fa fa-check"></i> Fonctionne entièrement hors ligne</li>
+                                <li><i class="fa fa-check"></i> Sauvegardes gérées par l'utilisateur</li>
+                                <li><i class="fa fa-times"></i> Windows uniquement</li>
+                            </ul>
+                        </div>
+                        <a href="checkout.html?plan=desktop" class="pricing-button">Acheter la licence</a>
+                    </div>
+
+                    <!-- Cloud (Pay-as-you-go) -->
+                    <div class="pricing-card featured">
+                        <div class="popular-tag">RECOMMANDÉ</div>
+                        <div class="pricing-header">
+                            <h3>Solution Cloud</h3>
+                            <div class="price">Facturation à l'usage<span> / pay as you go</span></div>
+                            <p>Données en ligne. Synchronisé sur tous vos appareils.</p>
+                        </div>
+                        <div class="pricing-features">
+                            <ul>
+                                <li><i class="fa fa-check"></i> Données stockées en ligne (sécurisées)</li>
+                                <li><i class="fa fa-check"></i> Synchronisation multi-appareils</li>
+                                <li><i class="fa fa-check"></i> Accès depuis Windows, macOS, Linux, iOS, Android</li>
+                                <li><i class="fa fa-check"></i> Accès partout, mises à jour automatiques</li>
+                                <li><i class="fa fa-check"></i> Pay as you go (pas d'engagement)</li>
+                            </ul>
+                        </div>
+                        <a href="cloud.html" class="pricing-button">Démarrer sur le cloud</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 optilk. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="functions.js"></script>
+</body>
+</html>
